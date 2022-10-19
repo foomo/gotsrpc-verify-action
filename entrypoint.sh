@@ -2,6 +2,8 @@
 
 echo "Generating GoTSRPC for $1"
 
+git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
 /usr/bin/gotsrpc "$GITHUB_WORKSPACE/$1" > /dev/null
 
 git checkout go.mod go.sum > /dev/null
