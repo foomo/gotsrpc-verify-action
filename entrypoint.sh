@@ -2,7 +2,7 @@
 
 echo "Generating GoTSRPC for $1"
 
-/usr/bin/gotsrpc > /dev/null
+/usr/bin/gotsrpc "$GITHUB_WORKSPACE/$1" > /dev/null
 
 git checkout go.mod go.sum > /dev/null
 
