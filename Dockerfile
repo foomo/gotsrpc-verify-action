@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM gotsrpc:2.6.1
+FROM foomo/gotsrpc:2.6.1
 
 RUN apk update && apk upgrade && \
     apk add --no-cache git
